@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font - Kaise Tokumin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        @media only screen and (max-width: 768px) {
+            .testimonial-container {
+                padding: 15px;
+            }
+
+            .testimonial-item {
+                max-width: 95%;
+            }
+
+            .see-more-btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .testimonial-item {
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+
+        .testimonial-stars {
+            color: #f5c518;
+        }
+    </style>
+</head>
+
+<body class="font-kaisei">
+    <!-- Nav Section -->
+    <nav class="absolute top-0 left-0 w-full text-white p-4 flex items-center justify-between z-10 lg:px-20 px-6">
+        <div class="logo text-3xl font-semibold px-2">Kaise<span class="text-red-500">food</span></div>
+        <div class="menu hidden lg:flex text-base">
+            <div class="menu px-2">Menu</div>
+            <div class="about px-2">About</div>
+            <div class="service px-2">Service</div>
+            <div class="contact-us px-2">Contact Us</div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="relative bg-cover bg-center h-screen grid lg:grid-cols-2 grid-cols-1"
+        style="background-image: url('assets/img/jumbotrone.png');">
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30"></div>
+
+        <!-- Kolom pertama untuk teks -->
+        <div
+            class="relative text-white lg:text-9xl text-4xl text-7xl font-bold px-6 lg:px-20 py-24 z-10 mt-16 lg:mt-0 flex items-center">
+            <p class="leading-tight lg:leading-snug">Japanese Street Food</p>
+        </div>
+        <!-- Kolom kedua kosong untuk layout grid -->
+    </div>
+
+    <!-- Content -->
+    <div class="content grid grid-rows-2 mt-20">
+        <!-- Content 1 -->
+        <div class="content-one grid lg:grid-cols-2 grid-cols-1 gap-10 lg:gap-40 px-6 lg:px-20 mb-20">
+            <div>
+                <img src="assets/img/Frame 8.png" alt="" class="rounded">
+            </div>
+            <div class="">
+                <h1 class="text-3xl font-bold">Rasakan Kenikmatan Autentik Kuliner Jepang</h1>
+                <p class="text-gray-500 lg:w-2/3">Pengalaman Santapan yang Memanjakan Lidah dan Mata</p>
+                <p class="mt-10">Nikmati harmoni rasa dan presentasi dalam setiap hidangan, menghadirkan kelezatan
+                    otentik dari Negeri Sakura langsung ke meja Anda.</p>
+            </div>
+        </div>
+
+        <!-- Content 2 -->
+        <div class="content-two grid lg:grid-cols-2 grid-cols-1 gap-10 lg:gap-40 px-6 lg:px-20 mb-20">
+            <div class="">
+                <h1 class="text-3xl font-bold">Jelajahi Ragam Rasa Kuliner Jepang</h1>
+                <p class="text-gray-500 lg:w-2/3">Dari Sushi hingga Ramen, Setiap Gigitan Penuh Kejutan</p>
+                <p class="mt-10">Setiap hidangan Jepang menyajikan perpaduan sempurna antara tradisi dan inovasi,
+                    menghadirkan cita rasa yang menggugah selera dalam setiap sajiannya.</p>
+            </div>
+            <div>
+                <img src="assets/img/jakub-dziubak-iOHJKJqO6E0-unsplash.jpg" alt="" class="rounded">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <div
+        class=" bg-zinc-800 grid lg:grid-cols-2 grid-cols-1 px-6 lg:px-20 py-20 gap-10 lg:gap-40 text-white items-center">
+        <div>
+            <img src="assets/img/unsplash_TWTxHN2QIGc.png" alt="" class="rounded">
+        </div>
+        <div class="">
+            <h1 class="text-3xl font-bold">MENU</h1>
+            <div class="flex justify-between mb-1">
+                <p class="mt-10 text-xl">ALL YOU CAN EAT</p>
+                <p class="mt-10 text-xl">118 K</p>
+            </div>
+            <hr>
+            <div class="flex justify-between mb-1 ">
+                <p class="mt-3 text-xl">RAMEN</p>
+                <p class="mt-3 text-xl">55 K</p>
+            </div>
+            <hr>
+            <div class="flex justify-between mb-1 ">
+                <p class="mt-3 text-xl">SUSHI</p>
+                <p class="mt-3 text-xl">40 K</p>
+            </div>
+            <hr>
+            <div class="flex justify-between mb-1 ">
+                <p class="mt-3 text-xl">TAKOYAKI</p>
+                <p class="mt-3 text-xl">35 K</p>
+            </div>
+            <hr>
+            <div class="flex justify-between mb-1 ">
+                <p class="mt-3 text-xl">SASHIMI</p>
+                <p class="mt-3 text-xl">45 K</p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="flex flex-col lg:flex-row justify-between p-6 lg:p-20 items-center">
+        <div class="w-full lg:w-2/5 mb-8 lg:mb-0">
+            <h1 class="text-4xl lg:text-6xl font-bold">Cabang Kami Kaisei Food</h1>
+        </div>
+        <div class="w-full lg:w-2/5">
+            <p class="text-gray-500">Selamat datang di Cabang Kami Kaisai Food! Nikmati cita rasa autentik Jepang yang
+                kami hadirkan dengan penuh kelezatan dan tradisi.</p>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 justify-center p-6 lg:p-8">
+        <!-- Card 1 -->
+        <div class="relative group w-full lg:w-80 h-96 rounded-lg overflow-hidden shadow-lg">
+            <img class="w-full h-full object-cover" src="assets/img/zalfa-imani-pbwOfwVjUpE-unsplash.jpg" alt="Jakarta">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4">
+                <p class="text-white">Indonesia - Jakarta, Menteng Raya No 12</p>
+            </div>
+            <div
+                class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-white w-32 h-32 rounded-full flex justify-center items-center shadow-lg">
+                    <span class="text-red-500 font-bold text-base">Tempat Tujuan</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="relative group w-full lg:w-80 h-96 rounded-lg overflow-hidden shadow-lg">
+            <img class="w-full h-full object-cover object-top" src="assets/img/ash-edmonds-uztw2giebSc-unsplash.jpg"
+                alt="Kyoto">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4">
+                <p class="text-white">Jepang - Kyoto, Fukushima Neru No 27</p>
+            </div>
+            <div
+                class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-white w-32 h-32 rounded-full flex justify-center items-center shadow-lg">
+                    <span class="text-red-500 font-bold text-base">Tempat Tujuan</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="relative group w-full lg:w-80 h-96 rounded-lg overflow-hidden shadow-lg">
+            <img class="w-full h-full object-cover" src="assets/img/connor-meakins-fEAhHJdl8KA-unsplash.jpg"
+                alt="Osaka">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-4">
+                <p class="text-white">Jepang - Osaka, Fukume Neru No 27</p>
+            </div>
+            <div
+                class="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="bg-white w-32 h-32 rounded-full flex justify-center items-center shadow-lg">
+                    <span class="text-red-500 font-bold text-base">Tempat Tujuan</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimoni -->
+    <!-- Testimoni -->
+    <div class="bg-black text-white py-16">
+        <div class="testimonial-container container mx-auto px-8">
+            <h2 class="text-4xl font-bold mb-6 text-center">Testimoni Dari Customer</h2>
+            <p class="text-center mb-12 max-w-2xl mx-auto">
+                Selamat datang di Cabang Kami Kaisei Food! Nikmati cita rasa autentik Jepang yang kami hadirkan dengan
+                penuh kecelatan dan tradisi.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8">
+                <!-- Card 1 -->
+                <div
+                    class="testimonial-item bg-white text-black p-6 rounded-lg shadow-lg w-64 hover:shadow-2xl transition">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
+                        <img src="assets/img/2dfa08bf975ddb7abb1f49e2d75b747f.jpg" alt="Customer Image"
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <h3 class="text-lg font-bold text-center">Oh Yeon Hee</h3>
+                    <p class="text-sm text-center">Makanan enak dan sangat rekomended untuk pencinta masakan Jepang.</p>
+                    <div class="testimonial-stars flex justify-center mt-4">
+                        <span class="text-yellow-500 text-lg">★★★★★</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="testimonial-item bg-white text-black p-6 rounded-lg shadow-lg w-64 hover:shadow-2xl transition">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
+                        <img src="assets/img/09dca3cb50ba9effb8d5345ef6714305.jpg" alt="Customer Image"
+                            class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-lg font-bold text-center">Han So Hee</h3>
+                    <p class="text-sm text-center">Pelayanan terbaik dan suasana yang sangat nyaman.</p>
+                    <div class="testimonial-stars flex justify-center mt-4">
+                        <span class="text-yellow-500 text-lg">★★★★★</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="testimonial-item bg-white text-black p-6 rounded-lg shadow-lg w-64 hover:shadow-2xl transition">
+                    <div class="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
+                        <img src="assets/img/b29b2e82eef1919bf9a49f7d28d80092.jpg" alt="Customer Image"
+                            class="w-full h-full object-cover object-top">
+                    </div>
+                    <h3 class="text-lg font-bold text-center">Lee Dong Wook</h3>
+                    <p class="text-sm text-center">Harga terjangkau dan menu sangat variatif.</p>
+                    <div class="testimonial-stars flex justify-center mt-4">
+                        <span class="text-yellow-500 text-lg">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button
+                    class="see-more-btn bg-transparent border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition">
+                    Lihat Selengkapnya
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-16">
+        <div class="container mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Subscription Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Berlangganan Info dari Kaisei Food</h3>
+                <form class="flex mb-4">
+                    <input type="email" placeholder="your@email.com"
+                        class="py-2 px-4 rounded-full w-full border border-gray-300">
+                    <button class="bg-black text-white py-2 px-4 rounded-full -ml-8">→</button>
+                </form>
+                <p class="text-gray-600">Selamat datang di Cabang Kami Kaisei Food! Nikmati cita rasa autentik Jepang
+                    yang kami hadirkan dengan penuh kecelatan dan tradisi.</p>
+                <p class="mt-4 text-gray-600">Website : KaiseiFood.com</p>
+            </div>
+
+            <!-- Menu Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Menu</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>All You Can Eat</li>
+                    <li>Ramen</li>
+                    <li>Sushi</li>
+                    <li>Takoyaki</li>
+                </ul>
+            </div>
+
+            <!-- Quick Menu Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Menu</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>About</li>
+                    <li>Career</li>
+                    <li>Reservation</li>
+                    <li>Location</li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Social Media</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mx-auto mt-8 text-center">
+            <h3 class="text-xl font-bold mb-2">Jam Buka</h3>
+            <p class="text-gray-600">Senin - Jumat : 21.00 - 01.00</p>
+            <p class="text-gray-600">Sabtu - Minggu : 11.00 - 22.30</p>
+        </div>
+    </footer>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        kaisei: ['Kaisei Tokumin', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
